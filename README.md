@@ -1,34 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Image Upload To Server With Uploadthing
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Package Setup
+1. Install the packages
+```
+npm install uploadthing @uploadthing/react react-dropzone
+```
+2. Add env variables
+```
+UPLOADTHING_SECRET=sk_live_de5320f06f4659f22a65bb0af630091f096d3a7f185d9ceddfe07255a6079d44
+UPLOADTHING_APP_ID=rtrx75y6br
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Set up in your Next.js application
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Continue setting up with either the [App Router](https://docs.uploadthing.com/nextjs/appdir) or [Pages Router](https://docs.uploadthing.com/nextjs/pagedir)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Check Further Documentation
+- [uploadthing.com](https://uploadthing.com/)
