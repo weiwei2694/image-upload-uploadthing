@@ -1,7 +1,7 @@
 "use client";
 
 import "@uploadthing/react/styles.css";
-import { UploadButton } from "@uploadthing/react";
+import { UploadDropzone } from "@uploadthing/react";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -16,7 +16,7 @@ interface Files {
     url: string;
 }
 
-const Button = () => {
+const DnD = () => {
     const [error, setError] = useState<Error>();
     const [files, setFiles] = useState<Files[]>([]);
 
@@ -38,8 +38,8 @@ const Button = () => {
     return (
         <main className="flex min-h-screen flex-col items-center justify-start gap-10 p-24">
             {/* @ts-ignore */}
-            <UploadButton
-                endpoint="imageUploaderButton"
+            <UploadDropzone
+                endpoint="imageUploaderDnD"
                 onClientUploadComplete={onClientUploadComplete}
                 onUploadError={onUploadError}
             />
@@ -62,4 +62,4 @@ const Button = () => {
     );
 };
 
-export default Button;
+export default DnD;
